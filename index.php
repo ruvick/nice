@@ -17,7 +17,7 @@
 					<img src = "<?php bloginfo("template_url");?>/images/biglogo.jpg" alt = "<?php bloginfo("name");?>" title = "<?php bloginfo("name");?>" />
 				</div>
 				
-				<a href = "<?php echo get_category_link(9); ?>">
+				<a href = "<?php echo get_category_link(9); ?>"> 
 					<div id = "me3" class = "mainElements">
 						<div class = "mainElemText">
 							<img src = "<?php bloginfo("template_url");?>/images/gar.png" alt = "Автоматика Nice для гаражных ворот" title = "Автоматика Nice для гаражных ворот" />
