@@ -1,0 +1,539 @@
+﻿/*
+Theme Name: IDEA
+Theme URI: 
+Author: ASMI Studio
+Author URI: 
+Description: IDEA
+Version: 1.0
+Tags: IDEA
+*/
+
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProBold"; */
+@font-face {
+    font-family: "MyriadProBold";
+    src: url("fonts/MyriadProBold/MyriadProBold.eot");
+    src: url("fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+html ,body{
+	margin:0px;
+	padding:0px;
+}
+
+a {
+	text-decoration:none;
+	color:#00529b;
+}
+
+a:hover {
+	text-decoration:underline;
+	color:#3788c7;
+}
+
+form {
+	float:left;
+	width:100%;
+}
+	
+
+label {
+	float:left;
+	width:100%;
+}
+
+
+textarea, input[type=password], input[type=tel], input[type=email], input[type=text] {
+	height:30px;
+	width:94%;
+	padding:0 3%;
+	border:1px solid #3788c7;
+	margin-bottom:10px;
+}
+
+
+textarea{
+padding:5px 3%;
+min-height:100px;
+}
+
+table {
+	width:100%;
+	border-top:1px solid gray;
+	border-right:1px solid gray;
+	border-spacing: 0;
+}
+
+th,td{
+	text-align:left;
+	border-bottom:1px solid gray;
+	border-left:1px solid gray;
+	padding:5px 10px;
+}
+
+th{
+	background-color:lightgray;
+}
+
+td{
+	
+}
+
+input[type=submit], .btn {
+	border:none;
+	background-color:#00529b;
+	padding:5px 20px;
+	color:white;
+	cursor:pointer;
+	-webkit-transition: All 0.5s ease;
+	-moz-transition: All 0.5s ease;
+	-o-transition: All 0.5s ease;
+	-ms-transition: All 0.5s ease;
+	transition: All 0.5s ease;
+	text-decoration:none;
+}
+
+.btn:hover {
+	background-color:#3788c7;
+	color:white;
+	text-decoration:none;
+}
+
+.main {
+	font-family: "MyriadProRegular";
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.line {
+	float: left;
+	min-height: 40px;
+	width: 100%;
+}
+
+.centerInLine {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.head {
+	min-height:85px;
+}
+
+.menuBlk {
+	float:right;
+}
+
+.menuBlk ul{ 
+	margin:0;
+	padding:0;
+	float:left;
+	list-style:none;
+	line-height:85px;
+}
+
+.menuBlk ul li{ 
+	float:left;
+	margin-right:20px;
+}
+
+.menuBlk ul li:last-child{ 
+	margin-right:0px;
+}
+
+.menuBlk ul li a{
+	color:black;
+	text-transform:uppercase;
+}
+
+.mainContent {
+/* 	height:10vh; */
+/* 	min-height:850px; */
+	background-color:#bdbfc1;
+}
+
+.allContent { 
+ 	background-color:#bdbfc1;
+	min-height:500px;
+}
+
+.content {
+    background-color: white;
+    float: left;
+    margin: 20px 0;
+    min-height: 100px;
+    padding: 10px 2% 20px;
+    width: 67%;
+}
+
+.sidebar {
+	float:left;
+	width:26%;
+	margin-right:3%;
+	min-height:100px;
+	margin: 20px 3% 20px 0;
+}
+
+.sidebar ul{ 
+	list-style:none;
+	margin:0;
+	padding:0;
+	background-color:#00529b;
+	float:left;
+}
+
+.sidebar ul a{ 
+	text-decoration:none;
+}
+
+.sidebar ul li{ 
+	width:100%;
+	float:left;
+}
+
+.sidebar ul li a{ 
+	 color:white;
+	 padding:10px 5%;
+	 float:left;
+	 width:90%;
+}
+
+.sidebar ul li ul{ 
+	display:none;
+	width:90%;
+	margin-left:10%;
+}
+
+.sidebar .current-cat-ancestor > a, .sidebar .current-cat-parent > a, .sidebar .current-cat > a{ 
+	background: linear-gradient(to right, #3788c7, #00529b);
+}
+
+.sidebar .current-cat > a{ 
+	 background: linear-gradient(to right, #3788c7, #00529b);
+}
+
+.sidebar .current-cat > a:before{ 
+	content:"\f054";
+	font-family: FontAwesome;
+	margin-right:10px;
+}
+
+ 
+
+.sidebar .current-cat-ancestor > ul, .sidebar .current-cat-parent > ul, .sidebar .current-cat > ul{ 
+	display:block;
+}
+
+
+
+.logo {
+	width:125px;
+	height:85px;
+	float:left;
+}
+
+
+
+.mainBlk{
+	margin-bottom:20px
+}
+
+.mainBlk a:nth-child(3n) .mainElements{ 
+margin-right:0;
+}
+
+.mainElements {
+	/*
+	width: 20vw;
+	height: 20vw;
+	*/
+	
+	width: 61vh;
+	height: 61vh;
+	
+	float:left;
+	min-height:320px;
+	min-width:320px;
+	max-height:385px;
+	max-width:385px;
+	margin-right:20px;
+	margin-bottom:20px;
+	position:relative;
+}
+
+#me1 {background:rgba(0, 0, 0, 0) url("images/mainRasp.jpg") repeat scroll 0 0 / cover;}
+#me2 {
+	background-color:#00529b;
+	text-align:center;
+}
+
+#me2 img{ 
+	margin-top:200px;
+}
+
+#me3 {background:rgba(0, 0, 0, 0) url("images/mainGor.jpg") repeat scroll 0 0 / cover;}
+#me4 {background:rgba(0, 0, 0, 0) url("images/mainOtkat.jpg") repeat scroll 0 0 / cover;}
+#me5 {background:rgba(0, 0, 0, 0) url("images/mainDost.jpg") repeat scroll 0 0 / cover;}
+#me6 {background:rgba(0, 0, 0, 0) url("images/mainSlak.jpg") repeat scroll 0 0 / cover;}
+
+.mainElemText {
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	height:95px;
+	background-color:#00529b;
+	background:url("images/textBg.png");
+	background-blend-mode: multiply;
+	color:white;
+}
+
+.mainElemText img{ 
+	height: 50px;
+	margin: 22px 0 22px 22px; 
+	float:left;
+}
+
+.mainElemText .text {
+	width:200px;
+	float:left;
+	margin-left:20px;
+}
+
+.mainElemText .text h2{
+	text-transform:uppercase;
+	font-family: "MyriadProRegular"; 
+	font-weight:normal;
+	font-size:22px;
+}
+
+.footer {
+	min-height:260px;
+	background-color:#414142;
+	padding: 20px 0;	
+}
+
+.footerElem {
+	width:30%;
+	min-height:260px;
+	margin-right:3%;
+	float:left;
+	color:white;
+}
+
+.footerElem h2{ 
+	text-transform:uppercase;
+	font-family: "MyriadProRegular"; 
+	font-weight:normal;
+	margin-top:0px;
+	font-size:20px;
+}
+
+.footerElem a{ 
+	color:white;
+}
+
+.footerElem ul{ 
+	list-style:none;
+	margin:0;
+	padding:0;
+} 
+
+#fe2 {
+	border-left:1px solid #00529b;
+	border-right:1px solid #00529b;
+	width:26%;
+	padding: 0 2%;
+}
+
+.footer .footerElem:last-child{ 
+	margin-right:0;
+}
+
+.catDescription{
+}
+
+.catDescription img{
+	margin:0 20px 20px 0;
+	float:left;
+}
+
+.subcategorys {
+	float:left;
+	width:100%;
+}
+
+.subcatElem {
+	float:left;
+	position:relative;
+	width:100%;
+	max-width:30%;
+	position:relative;
+	min-height:200px;
+	overflow:hidden;
+	margin-right:3%;
+	margin-bottom:3%;
+}
+
+.subcatElem img{
+	width:100%;
+	height:auto;
+}
+
+.subcatElem .mainElemText h2{
+	margin:10px;
+	font-size:18px;
+	font-weight:normal;
+}
+
+.breadcrumbs {
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.wpcf7-response-output {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	border: none !important;
+	background: url("images/1.png");
+	color: white;
+	font-size: 32px;
+	z-index: 100000000;
+	top: 0;
+	left: 0;
+	margin: 0px !important;
+	font-family: "MyriadProBold";
+	text-align:center;
+	
+	line-height:5;
+}
+
+.wpcf7-not-valid {
+	background: url("images/redTrBg.png")!important;
+}
+
+.wpcf7-not-valid-tip { 
+	display:none!important;
+}
+
+.contactsInPage {
+	font-size: 20px;
+}
+
+.contactsInPage p{
+	margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.contactsInPage i{
+	color:#00529b;
+	
+}
+
+.download_elem {
+	font-size:20px;
+}
+
+.download_elem i{ 
+
+}
+
+iframe {
+	width:100%;
+	min-height:900px
+}
+
+.productInCat {
+	float:left;
+	width:100%;
+	min-height:100%;
+}
+
+.catTovarElem {
+	float:left;
+	width:100%;
+	border-bottom:1px solid lightgray;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+
+.catTovarElem  .text{ 
+	float:left;
+	width:80%;
+}
+
+.catTovarElem  .btn{  
+	float:right;
+}
+
+.catTovarElem  a{ 
+	text-decoration:none;
+}
+
+.catTovarElem  h3{  
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+.catTovarElem  img{ 
+	float:left;
+	width:150px;
+	height:auto;
+	
+}
+
+@media screen and (max-width:1280px){ 
+	.centerInLine {
+		margin:0 15px;
+	}
+}
+
+@media screen and (max-width:1080px), handheld{ 
+
+}
+
+@media screen and (max-width:1024px), handheld{ 
+
+}
+
+@media screen and (max-width:960px), handheld{ 
+
+}
+
+
+@media screen and (max-width:800px), handheld{ 
+
+}
+
+@media screen and (max-width:768px), handheld{ 
+
+}
+
+@media screen and (max-width:640px), handheld{ 
+
+}
+
+@media screen and (max-width:480px), handheld{ 
+
+}
+
+@media screen and (max-width:320px), handheld{ 
+
+}
