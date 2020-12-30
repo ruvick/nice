@@ -196,7 +196,7 @@ input[type=submit], .btn {
 	position: fixed;
 	z-index: 50000;
 	background: rgba(0,0,0,0.9);
-	// opacity: 0.95;
+	/* // opacity: 0.95; */
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -332,13 +332,14 @@ margin-right:0;
 }
 .mainBlk__column {
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .mainBlk__column a {
     display: block;
     max-width: 385px;
     width: 100%;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 .mainBlk__column a:last-child {
     margin-right: 0;
@@ -356,7 +357,7 @@ margin-right:0;
 .mainElements__block {
 	max-width: 385px;
   width: 100%;
-	margin-right: 10px;
+	/* margin-right: 10px; */
 }
 /*.mainElements {
 	width: 61vh;
@@ -396,18 +397,18 @@ margin-right:0;
 	background:url("images/textBg.png");
 	background-blend-mode: multiply;
 	color:white;
+	display: flex;
 }
 
 .mainElemText img{ 
 	height: 50px;
 	margin: 22px 0 22px 22px; 
-	float:left;
+	/* float:left; */
 }
 
 .mainElemText .text {
-	/*width:200px;*/
 	max-width: 200px;
-	float:left;
+	/* float:left; */
 	margin-left:20px;
 }
 
@@ -610,17 +611,27 @@ iframe {
 	}
 }
 
-@media screen and (max-width:1200px) { 
+@media screen and (max-width:1203px) { 
 	.header__centerInLine {
 		padding: 0 10px 0 0;
 	}
-	.mainElements {
+	.mainBlk__column a {
     margin-right: 10px;
-	}
+    flex: 1 0 30%;
+}
+.mainBlk__column a:nth-child(3) {
+	margin-right: 0;
+}
+.mainElements__block {
+	flex: 0 0 33%;
+	margin-right: 10px;
+}
 }
 
-@media screen and (max-width:1080px), handheld{ 
-
+@media screen and (max-width:1024px) { 
+	.mainElemText .text h2 {
+    font-size: 20px;
+}
 }
 
 @media screen and (max-width:1015px) { 
@@ -632,20 +643,64 @@ iframe {
 }
 }
 
-@media screen and (max-width:960px), handheld{ 
-
+@media screen and (max-width:960px) { 
+	.mainElemText .text {
+    margin-left: 10px;
+    margin-right: 3px;
+}
 }
 
 
-@media screen and (max-width:800px), handheld{ 
-
+@media screen and (max-width:886px) {
+	.mainElements {
+		height: 21vh;
+		min-width: 200px;
+}
+	.mainElemText .text h2 {
+    font-size: 18px;
+    margin-top: 21px;
+}
 }
 
-@media screen and (max-width:768px), handheld{ 
+@media screen and (max-width:812px) { 
+	.mainElements {
+    min-height: 300px;
+    height: 18vh;
+}
+.mainElemText .text h2 {
+	font-size: 16px;
+	margin-top: 21px;
+}
+#me2 img {
+	width: 100%;
+}
+}
 
+@media screen and (max-width:768px) { 
+	.mainBlk__column {
+    flex-direction: row-reverse;
+}
+	.mainBlk__column a {
+    margin-right: 0;
+    flex: 0 0 48%;
+}
+#me2 {
+	flex: 0 0 48%;
+	margin-right: 0;
+}
+#me2 img {
+	width: auto;
+}
 }
 
 @media screen and (max-width:700px) { 
+	.header {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+		background: #fff;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
 	.menuBlk {
     display: none;
 	}
@@ -658,6 +713,10 @@ iframe {
 	.menuBlk ul li a {
     color: #fff;
 	}
+	.mainContent {
+    padding: 65px 0;
+    background-color: #bdbfc1;
+}
 }
 
 @media screen and (max-width:570px) { 

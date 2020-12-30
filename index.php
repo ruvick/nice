@@ -29,9 +29,9 @@
 						</div>
 					</div>
 				</a>
-			</div>
+				<!-- </div> -->
 
-			<div class="mainBlk__column mainBlk__column_bottom d-flex">
+				<!-- <div class="mainBlk__column mainBlk__column_bottom d-flex"> -->
 				<a href = "<?php echo get_category_link(7); ?>">
 					<div id = "me4" class = "mainElements">
 						<div class = "mainElemText">
