@@ -1,7 +1,9 @@
 <?php get_header(); ?>
-	<div class = "line mainContent">
-		<div class = "centerInLine">
-			<div class = "mainBlk">
+<div class = "line mainContent">
+	<div class = "centerInLine">
+		<div class = "mainBlk">
+
+			<div class="mainBlk__column d-flex">
 				<a href = "<?php echo get_category_link(8); ?>">
 					<div id = "me1" class = "mainElements">	
 						<div class = "mainElemText">
@@ -13,7 +15,7 @@
 					</div>
 				</a>
 				
-				<div id = "me2" class = "mainElements">
+				<div id = "me2" class = "mainElements mainElements__block">
 					<img src = "<?php bloginfo("template_url");?>/images/biglogo.jpg" alt = "<?php bloginfo("name");?>" title = "<?php bloginfo("name");?>" />
 				</div>
 				
@@ -27,7 +29,9 @@
 						</div>
 					</div>
 				</a>
-				
+			</div>
+
+			<div class="mainBlk__column mainBlk__column_bottom d-flex">
 				<a href = "<?php echo get_category_link(7); ?>">
 					<div id = "me4" class = "mainElements">
 						<div class = "mainElemText">
@@ -38,7 +42,7 @@
 						</div>
 					</div>
 				</a>
-				
+
 				<a href = "<?php echo get_category_link(10); ?>">
 					<div id = "me5" class = "mainElements">
 						<div class = "mainElemText">
@@ -49,7 +53,7 @@
 						</div>
 					</div>
 				</a>
-				
+
 				<a href = "<?php echo get_category_link(5); ?>">
 					<div id = "me6" class = "mainElements">
 						<div class = "mainElemText">
@@ -60,9 +64,10 @@
 						</div>
 					</div>
 				</a>
-				
-			</div>
+			</div>	
+
 		</div>
 	</div>
-	
+</div>
+
 <?php get_footer(); ?>
