@@ -23,13 +23,13 @@
 <body>
 
 	<script>
-		$(document).ready(function() { 
+		$(document).ready(function() {  
 	
 		});		
 	</script>
 
 <div class = "main">
-	<div class = "line head">
+	<header class = "header">
 		<div class = "centerInLine">
 			<a href = "<?php bloginfo("url");?>">
 				<img class = "logo" src = "<?php bloginfo("template_url");?>/images/logo.jpg" alt = "<?php bloginfo("name");?>" title = "<?php bloginfo("name");?>" />

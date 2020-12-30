@@ -120,20 +120,25 @@ input[type=submit], .btn {
 	width: 100%;
 }
 
-.line {
+.header {
+	
+}
+
+/*.line {
 	float: left;
 	min-height: 40px;
 	width: 100%;
 }
 
+.head {
+	min-height:85px;
+}*/
+
+
 .centerInLine {
 	margin: 0 auto;
 	max-width: 1200px;
 	width: 100%;
-}
-
-.head {
-	min-height:85px;
 }
 
 .menuBlk {

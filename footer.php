@@ -42,7 +42,7 @@
 				
 				<p class = "email">
 					<?php 
-						echo $options[mail];
+						echo $options[mail]; 
 					?>
 				</p>
 				
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 		
-	</div>
+	</header>
 </div>
 	
 

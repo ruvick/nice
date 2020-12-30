@@ -5,8 +5,7 @@
   "main": "index.php",
   "scripts": {
     "test": "editorconfig-checker",
-    "clear_r": "ssh rudikov-web@rudikov-web.myjino.ru \"rm  nice.ruva-studio.ru/domains/nice.ruva-studio.ru/wp-content/themes/Nice/*.*\"",
-
+    "clear_r": "ssh rudikov-web@rudikov-web.myjino.ru \"rm domains/nice.ruva-studio.ru/wp-content/themes/Nice/*.*\"",
     "send_r": "scp -C *.php *.png *.css rudikov-web@rudikov-web.myjino.ru:domains/nice.ruva-studio.ru/wp-content/themes/Nice/",
     "send_ms": "scp -C *.css rudikov-web@rudikov-web.myjino.ru:domains/nice.ruva-studio.ru/wp-content/themes/Nice/",
     "send_head": "scp -C header.php rudikov-web@rudikov-web.myjino.ru:domains/nice.ruva-studio.ru/wp-content/themes/Nice/",
@@ -32,7 +31,7 @@
     "wp",
     "WordPress"
   ],
-  "author": "Ruvick",
+  "author": "ruvick",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ruvick/nice.git/issues"
