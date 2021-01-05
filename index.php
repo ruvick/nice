@@ -17,7 +17,7 @@
 				
 				<div id = "me2" class = "mainElements mainElements__block">
 					<img src = "<?php bloginfo("template_url");?>/images/biglogo.jpg" alt = "<?php bloginfo("name");?>" title = "<?php bloginfo("name");?>" />
-				</div>
+				</div> 
 				
 				<a href = "<?php echo get_category_link(9); ?>"> 
 					<div id = "me3" class = "mainElements">
@@ -25,10 +25,11 @@
 							<img src = "<?php bloginfo("template_url");?>/images/gar.png" alt = "Автоматика Nice для гаражных ворот" title = "Автоматика Nice для гаражных ворот" />
 							<div class = "text">
 								<h2>Автоматика для гаражных ворот</h2>
+								
 							</div>
 						</div>
 					</div>
-				</a>
+				</a> 
 				<!-- </div> -->
 
 				<!-- <div class="mainBlk__column mainBlk__column_bottom d-flex"> -->
@@ -64,7 +65,7 @@
 						</div>
 					</div>
 				</a>
-			</div>	
+			</div>	    
 
 		</div>
 	</div>
